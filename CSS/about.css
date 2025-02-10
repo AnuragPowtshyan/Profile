@@ -1,0 +1,85 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600;700&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Poppins', sans-serif;
+}
+
+body {
+    background: linear-gradient(55deg, #6a07b5, #1e82a7b5);
+    color: #fff;
+    font-family: 'Arial', sans-serif;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    align-items: center;
+}
+
+.container {
+    display: flex;
+    flex-direction: column;
+    width: 80%;
+    max-width: 1200px;
+    align-items: center;
+}
+
+.about-content {
+    text-align: center;
+    padding: 20px;
+    font-size: 1.1em;
+}
+
+.bottom-section {
+    display: flex;
+    justify-content: space-between;
+    width: 100%;
+    margin-top: 20px;
+}
+
+.skills-container {
+    flex: 1;
+    padding: 20px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+.skills-container, .hobbies-container {
+    flex: 1;
+    padding: 20px;
+}
+
+.glow-text {
+    font-size: 2em;
+    text-shadow: 0 0 10px cyan, 0 0 20px blue;
+}
+.fade-in {
+    opacity: 0;
+    animation: fadeIn 2s forwards;
+}
+@keyframes fadeIn {
+    from { opacity: 0; }
+    to { opacity: 1; }
+}
+.skill-list, .hobbies-list {
+    list-style: none;
+    padding: 0;
+}
+.skill-list li, .hobbies-list li {
+    background: rgba(0, 255, 255, 0.2);
+    padding: 10px;
+    margin: 10px;
+    border-radius: 5px;
+    transition: 0.3s;
+}
+.skill-list li:hover, .hobbies-list li:hover {
+    background: cyan;
+    color: #000;
+    transform: scale(1.1);
+}
+.highlight {
+    color: cyan;
+    font-weight: bold;
+}
