@@ -1,46 +1,277 @@
-
 <!DOCTYPE html>
 <html lang="en">
-  <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>My Profile</title>
-    <link rel="stylesheet" href="profile.css">
-  </head>
-  <body>
-    <h1>My Profile</h1>
-    <img src="IMG_20230624_153308.jpg" alt="Anurag Kumar">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Portfolio - Anurag Kumar</title>
+    <link rel="stylesheet" href="CSS/profile.css">
+    <script defer src="profile.js"></script>
+    <script src="https://kit.fontawesome.com/a076d05399.js" crossorigin="anonymous"></script>
+</head>
+<body>
 
-    <h2>About Me</h2>
+    <header>
+        <div class="logo">
+            <img src="img/hacker.gif" alt="Anurag Kumar">
+        </div>
+        <nav>
+            <ul>
+                <li><a href="#about">About</a></li>
+                <li><a href="#skills">Skills</a></li>
+                <li><a href="#projects">Projects</a></li>
+                <li><a href="#contact-section">CONTACT</a></li>
+            </ul>
+            </nav>
+    </header>
 
-    <p>
-      Hello, I'm Anurag Kumar, an undergraduate at IIT Patna pursuing a BSc in
-      Computer Science and Data Analytics. I'm passionate about leveraging
-      technology to develop innovative solutions and I am a dedicated learner,
-      constantly seeking new knowledge and skills to enhance my abilities.
-    </p>
+    <section id="home" class="hero">
+        <div class="hero-content">
+            <h1>Hello, <span class="highlight">I'm</span> <br> Anurag Kumar</h1>
+            <h2><span class="highlight">Web Developer and Data Analyst</span></h2>
+            <br>
+        <a href="#" class="btn">DOWNLOAD CV</a>
+        </div>
+        
+        <div class="hero-image">
+            <img src="img/IMG_20230624_153308.jpg" alt="Anurag Kumar">
+        </div>
+    </section>
 
-    <h2>Education</h2>
-    <li>BSc in Computer Science and Data Analytics</li>
+    <section id="about" class="about">
+        <h2 class="section-title">About <span>Me</span></h2>
+        <div class="about-content">
+            <p>
+                A passionate and skilled <strong> <b style="color: orangered;">Front-End Developer and Data Analyst,</b></strong> 
+                I bring a unique blend of technical expertise to create impactful digital solutions. My front-end development skills encompass 
+                <strong> <b style="color: orangered;">HTML, CSS, and Javascript,</b></strong> enabling me to build interactive and user-friendly web applications. 
+                Complementing this, my data analysis capabilities, utilizing <strong><b style="color: orangered;">Python, Power BI, MySQL, and Excel,</b></strong> allow me to extract meaningful insights from data, driving informed decision-making...<strong><b style="color: aqua;"><a href="about.html" class="read-more">Read More</a></b></strong>
+            </p>
+        </div>
+    </section>
 
-    <h2>Skills</h2>
-    <ul>
-      <li>Python</li>
-      <li>JavaScript</li>
-      <li>HTML/CSS</li>
-      <li>Power BI</li>
-      <li>Tableau</li>
-      <li>MySQL</li>
-      <li>Excel</li>
-    </ul>
+    <section class="skills" id="skills">
+        <h2 class="section-title">Skills</h2>
+        <div class="skills-container">
+            <div class="skill-box">
+                <div class="skill-box-inner">
+                    <div class="skill-box-front">
+                        <img src="img/html-5.png" alt="HTML Logo">
+                        <i class="fas fa-server"></i>
+                        <h3>HTML</h3>
+                    </div>
+                    <div class="skill-box-back">
+                        <p>HTML (HyperText Markup Language) is the standard markup language for creating web pages. It provides the structure and content of a website, using tags to define elements like headings, paragraphs, images, and links.  HTML forms the foundation of any web page. </p>
+                    </div>
+                </div>
+            </div>
+    
+            <div class="skill-box">
+                <div class="skill-box-inner">
+                    <div class="skill-box-front">
+                        <img src="img/css-3.png" alt="CSS Logo">
+                        <i class="fas fa-server"></i>
+                        <h3>CSS</h3>
+                    </div>
+                    <div class="skill-box-back">
+                        <p>CSS (Cascading Style Sheets) is a style sheet language used to describe the presentation of a document written in a markup language like HTML.  It controls the visual appearance of a website, including layout, colors, fonts, and other styling aspects, separating content from presentation. </p>
+                    </div>
+                </div>
+            </div>
+    
+            <div class="skill-box">
+                <div class="skill-box-inner">
+                    <div class="skill-box-front">
+                        <img src="img/js.png" alt="JavaScript Logo">
+                        <i class="fas fa-server"></i>
+                        <h3>JavaScript</h3>
+                    </div>
+                    <div class="skill-box-back">
+                        <p>JavaScript is a versatile scripting language primarily used to add interactivity and dynamic behavior to websites.  It enables client-side scripting, allowing for features like animations, form validation, and dynamic content updates, enhancing the user experience.</p>
+                    </div>
+                </div>
+            </div>
+    
+            <div class="skill-box">
+                <div class="skill-box-inner">
+                    <div class="skill-box-front">
+                        <img src="img/python.svg" alt="Python Logo">
+                        <i class="fas fa-globe"></i>
+                        <h3>Python</h3>
+                    </div>
+                    <div class="skill-box-back">
+                        <p>Python is a versatile programming language widely used for data analysis. Utilizing libraries like pandas for data manipulation, numpy for numerical computations, matplotlib, and seaborn for data visualization, it enables powerful and efficient data handling and insights.</p>
+                    </div>
+                </div>
+            </div>
+    
+            <div class="skill-box">
+                <div class="skill-box-inner">
+                    <div class="skill-box-front">
+                        <img src="img/icons8-power-bi-logo-48.png" alt="PowerBi Logo">
+                        <i class="fas fa-globe"></i>
+                        <h3>Power BI</h3>
+                    </div>
+                    <div class="skill-box-back">
+                        <p>Power BI is a business analytics tool by Microsoft that enables users to visualize data, share insights, and make data-driven decisions through interactive reports, dashboards, and data visualizations. It's designed for ease of use and integration. </p>
+                    </div>
+                </div>
+            </div>
+    
+            <div class="skill-box">
+                <div class="skill-box-inner">
+                    <div class="skill-box-front">
+                        <img src="img/icons8-mysql-logo-48.png" alt="MySQL Logo">
+                        <i class="fas fa-globe"></i>
+                        <h3>MySQL</h3>
+                    </div>
+                    <div class="skill-box-back">
+                        <p>MySQL is a popular open-source relational database management system (RDBMS) used for storing and managing structured data It's reliable, performant, and widely used in web applications.</p>
+                    </div>
+                </div>
+            </div>
+    
+            <div class="skill-box">
+                <div class="skill-box-inner">
+                    <div class="skill-box-front">
+                        <img src="img/icons8-microsoft-excel-2019-48.png" alt="Excel Logo">
+                        <i class="fas fa-globe"></i>
+                        <h3>Excel</h3>
+                    </div>
+                    <div class="skill-box-back">
+                        <p>Excel is a spreadsheet software by Microsoft that allows users to organize, format, and calculate data with formulas. It includes features like pivot tables, charts, and graphs, making it essential for data analysis and management.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    
+    <section id="projects" class="projects">
+        <h2 class="section-title">My Projects</h2>
+        <div class="project-container">
+            <div class="project-box">
+                <div class="project-image">
+                    <img src="img/icons8-front-end-64.png" alt="Front-end Development">
+                </div>
+                <div class="project-info">
+                    <h3>Front-End Development</h3>
+                    <br>
+                    <p>Explore my innovative front-end projects that showcase my skills in HTML, CSS, and JavaScript.</p>
+                </div>
+                <br>
+                <a href="front-end-development.html"><button class="project-btn">View Project</button></a>
+                
+            </div>
+            <div class="project-box">
+                <div class="project-image">
+                    <img src="img/icons8-power-bi-logo-48.png" alt="Power BI Projects">
+                </div>
+                <div class="project-info">
+                    <h3>Power BI Projects</h3>
+                    <br>
+                    <p>Discover my data visualization projects using Power BI to create insightful dashboards.</p>
+                    <br>
+                    <br>
+                   <a href="powerbi.html"><button class="project-btn">View Project</button></a>
+                </div>
+            </div>
+            <div class="project-box">
+                <div class="project-image">
+                    <img src="img/icons8-microsoft-excel-2019-48.png" alt="Excel Projects">
+                </div>
+                <div class="project-info">
+                    <h3>Excel Projects</h3>
+                    <br>
+                    <p>Check out my Excel projects that demonstrate advanced data analysis and visualization techniques.</p>
+                    <br>
+                    <br>
+                    <a href="excel.html"><button class="project-btn">View Project</button></a>
+                </div>
+            </div>
+            <div class="project-box">
+                <div class="project-image">
+                    <img src="img/icons8-python-94.png" alt="Python Projects">
+                </div>
+                <div class="project-info">
+                    <h3>Python Projects</h3>
+                    <p>Explore my Python projects that utilize data analysis and machine learning techniques.</p>
+                    <br>
+                   <a href="python.html"><button class="project-btn">View Project</button></a>
+                </div>
+            </div>
+        </div>
+    </section>
 
-    <h2>Projects</h2>
-    <ul>
-      <li>Capstone Project: Developed a tour and travel website</li>
-    </ul>
+    <section class="contact-section" id="contact-section">
+     
+        <div class="contact-left">
+            <h2 style="font-weight: bold;">Contact Me</h2>
+            <div class="contact-info">
+                <br>
+                <br>
+                <p>Email:<span style="padding-left: 10px;"></span><a href="mailto:anurag45037@gmail.com">anurag45037@gmail.com</a></p>
+                <br>
+                <p>Phone: <span></span><a href="tel: 9142509994">9142509994</a></p>
+            </div>
+            <br>
+            <br>
+            <h3>Social Media</h3>
+            <div class="social-icons">
+                <a href="https://www.instagram.com/anuragpowtshyan" target="_blank" class="social-link">
+                    <div class="layer">
+                        <span></span>
+                        <span></span>
+                        <span></span>
+                        <span></span>
+                        <img src="img/icons8-instagram-48.png" alt="Instagram" class="social-icon" />
+                    </div>
+                </a>
 
-    <h2>Contact</h2>
-    <p>Email: anurag45037@gmail.com</p>
-  </body>
+                <a href="https://www.linkedin.com/in/anurag-kumar-a253b32a7" target="_blank" class="social-link">
+                    <div class="layer">
+                        <span></span>
+                        <span></span>
+                        <span></span>
+                        <span></span>
+                        <img src="img/icons8-linkedin-48.png" alt="LinkedIn" class="social-icon" />
+                    </div>
+                </a>
+
+                <a href="https://github.com/AnuragPowtshyan" target="_blank" class="social-link">
+                    <div class="layer">
+                        <span></span>
+                        <span></span>
+                        <span></span>
+                        <span></span>
+                        <img src="img/icons8-github-48.png" alt="GitHub" class="social-icon" />
+                    </div>
+                </a>
+            
+                <a href="https://wa.me/919142509994" target="_blank" class="social-link">
+                    <div class="layer">
+                        <span></span>
+                        <span></span>
+                        <span></span>
+                        <span></span>
+                        <img src="img/icons8-whatsapp-48.png" alt="WhatsApp" class="social-icon" />
+                    </div>
+                </a>
+            </div>
+            
+        </div>
+
+        <div class="contact-right" id="contactForm">
+            <h4>Contact With Me</h4>
+            <form>
+                <input type="text" placeholder="Name" required>
+                <input type="email" placeholder="Email" required>
+                <textarea placeholder="Message" required></textarea>
+                <button type="submit">SEND</button>
+            </form>
+
+        </div>
+        <footer>
+            <p>© 2025 – All rights reserved, Web Developer and Data Analyst – Anurag Kumar</p>
+        </footer>
+    </section>
+</body>
 </html>
-
