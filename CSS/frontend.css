@@ -9,7 +9,7 @@
 
 /* General Styles */
 body {
-    background-image: url('../img/frontend-img.jpg');
+/*     background-image: url('../img/frontend-img.jpg'); */
     background-size: cover; 
     background-position: center; 
     background-attachment: fixed; 
