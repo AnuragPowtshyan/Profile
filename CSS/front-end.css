@@ -7,3 +7,94 @@
     font-family: 'Poppins', sans-serif;
 }
 
+/* General Styles */
+body {
+/*     background-image: url('../img/frontend-img.jpg'); */
+    background-size: cover; 
+    background-position: center; 
+    background-attachment: fixed; 
+    background-repeat: no-repeat; 
+    color: #fff;
+    font-family: 'Poppins', sans-serif;
+    margin: 0;
+    padding: 0;
+    text-align: center;
+}
+
+/* Glowing Heading */
+.glow-text {
+    color: rgb(179, 6, 232);
+    text-shadow: 0 0 5px #0ff, 0 0 6px #0ff, 0 0 10px #0ff;
+}
+
+#heading {
+    font-size: 2.5rem;
+    margin-bottom: 20px;
+}
+
+/* Project Container */
+.container {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 20px;
+    justify-content: center;
+    align-items: center;
+    margin: 20px auto;
+    max-width: 1000px;
+}
+
+.project-card {
+    background: rgba(255, 255, 255, 0.1);
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(0, 255, 255, 0.5);
+    width: 100%;
+    /* max-width: 500px; */
+    transition: transform 0.3s ease-in-out, box-shadow 0.3s;
+    margin: 0 auto;
+}
+
+.project-card:hover {
+    transform: scale(1.05);
+    box-shadow: 0 0 20px rgba(0, 255, 255, 0.8);
+}
+
+.project-card h2 {
+    font-size: 1.5rem;
+    margin-bottom: 10px;
+}
+
+.project-card p {
+    font-size: 1.1rem;
+    color: #fff;
+}
+
+/* Project Link */
+.project-link {
+    display: inline-block;
+    margin-top: 10px;
+    padding: 10px 15px;
+    background: #0ff;
+    color: #000;
+    text-decoration: none;
+    font-weight: bold;
+    border-radius: 5px;
+    transition: background 0.3s ease-in-out, transform 0.2s;
+}
+
+.project-link:hover {
+    background: #00cccc;
+    transform: scale(1.1);
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+    .container {
+        grid-template-columns: 1fr;
+    }
+    .project-card {
+        width: 90%;
+    }
+}
+
+
