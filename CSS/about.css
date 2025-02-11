@@ -8,7 +8,11 @@
 }
 
 body {
-    background: linear-gradient(55deg, #6a07b5, #1e82a7b5);
+    background-image: url('../img/about-img.jpg');
+    background-size: cover; 
+    background-position: center; 
+    background-attachment: fixed; 
+    background-repeat: no-repeat; 
     color: #fff;
     font-family: 'Arial', sans-serif;
     display: flex;
